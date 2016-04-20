@@ -1,0 +1,4 @@
+hardcoded images go here
+
+hardcoded in twig files
+hardcoded in css files
