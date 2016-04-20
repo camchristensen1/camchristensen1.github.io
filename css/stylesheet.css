@@ -315,6 +315,22 @@ Homepage
 
 /* ============================================================================= Internal ============================================================================= */
 /* ============================================================================= General QA ============================================================================= */
+
+@media screen and (max-width: 1024px) {
+	.homepage main .wrap .nav-container nav.sidenav ul li:hover {
+		width: 30px;
+		transition: 0;
+		-webkit-transition: 0;
+	}
+	.homepage main .wrap .nav-container nav.sidenav ul li p{
+		display: none !important;
+	}
+	.one_is_visible .nav-container li:nth-child(1),  .two_is_visible .nav-container li:nth-child(2), .three_is_visible .nav-container li:nth-child(3), .four_is_visible .nav-container li:nth-child(4){
+    display: block;
+    width: 30px !important;
+	}
+}
+
 /* ============================================================================= Browser QA ============================================================================= */
 /* Modern */
 /* Internet Explorer 9 (.ie9) */
