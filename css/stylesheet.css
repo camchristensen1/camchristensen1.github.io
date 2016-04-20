@@ -250,7 +250,7 @@ Homepage
 
 .homepage main .wrap .projects-container .collection ul li .collection-item__content { height: 100%; }
 
-.homepage main .wrap .projects-container .collection ul li .collection-item__content .collection-item-image.image { height: 100%; }
+.homepage main .wrap .projects-container .collection ul li .collection-item__content .collection-item-image.image { height: 100vh; }
 
 .homepage main .wrap .projects-container .collection ul li .collection-item__content .collection-item-image.image img { display: none; }
 
