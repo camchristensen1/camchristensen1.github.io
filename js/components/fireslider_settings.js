@@ -2,6 +2,12 @@
 //  fireslider settings
 //==============================================================================
 
+  //--------------------------------------------------------------------------//
+  //--------------------------------------------------------------------------//
+  //this is what is set in the core js   //
+  //--------------------------------------------------------------------------//
+  //--------------------------------------------------------------------------//
+
   //-------------------------------------  
   //  carousel
   //-------------------------------------
@@ -51,9 +57,10 @@
   // ];
 
 
+//spotlight
 
-// Spotlight Slider
 if ( $('.spotlight-container ul > li').length > 1 ) {
+
   $('.spotlight-container ul').each(function() {
    $(this).fireSlider({
      delay: 8000,
@@ -61,11 +68,12 @@ if ( $('.spotlight-container ul > li').length > 1 ) {
      next:$(this).parents(".slider__contents").siblings(".slider__controls").find(".slider-nav--next")
    });
  });
+  
 }
 
 
 
-// Logos Slider
+//sponsors
 var bps = [
     {breakpoint: 1, show: 1, active: 1},
     {breakpoint: 640, show: 2, active: 1},
@@ -73,13 +81,13 @@ var bps = [
     {breakpoint: 1000, show: 4, active: 2}
 ];
 
-if ( $('.logos-container ul > li').length > 1 ) {
-  $('.logos-container ul').fireSlider({
+if ( $('.sponsors-container ul > li').length > 1 ) {
+  $('.sponsors-container ul').fireSlider({
     active: 2,
     delay: 8000,
     disableLinks: false,
-    prev: $(".logos-container").find(".slider-nav--prev"),
-    next: $(".logos-container").find(".slider-nav--next"),
+    prev:$(this).parent().siblings(".slider__controls").find(".slider-nav--prev"),
+    next:$(this).parent().siblings(".slider__controls").find(".slider-nav--next"),
     breakpoints: bps
   });
 }

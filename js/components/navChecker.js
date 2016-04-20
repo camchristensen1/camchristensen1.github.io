@@ -15,7 +15,6 @@
       //   activeClass: 'added-class',
       //   children: [$('nav.dropdown > ul > li')],
       //   targets: [$('body'), $('.search-block')],
-      //   minWidth: 1024
       // });
       //========================================
 
@@ -28,7 +27,6 @@
 // activeClass: the class that is added to 'targets', default "desktop-nav-is-too-wide"
 // children: array of jquery elements to calc widths, defaults to all direct children
 // targets: array of jquery elements that 'activeClass' is applied
-// minWidth: minimum width of window. if window is less than this number the activeClass will be applied.
 // =============================================================================
 
 (function ($, window, document, undefined) {
@@ -42,8 +40,7 @@
       activeClass: 'desktop-nav-is-too-wide',
       children: [],
       childrenWidth: 0,
-      targets: [$('body')],
-      minWidth: 0
+      targets: [$('body')]
     };
 
     this.options = $.extend({}, defaults, options);
@@ -100,16 +97,11 @@
           var plugin = this;
           var containerWidth = plugin.$el.width();
           
-          if ($(window).width() > plugin.options.minWidth) {
-            if (plugin.options.childrenWidth >= containerWidth ) {
-              plugin.updateClasses('add');
-            } else {
-              plugin.updateClasses('remove');
-            } 
-          } else {
+          if (plugin.options.childrenWidth >= containerWidth) {
             plugin.updateClasses('add');
+          } else {
+            plugin.updateClasses('remove');
           }
-
         },
 
         // Add or remove 'activeClass' to 'targets'

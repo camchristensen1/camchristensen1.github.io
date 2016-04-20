@@ -15,9 +15,6 @@ function placeHolders(form) {
     }
 
     //if 'this' has class
-    if($(this).hasClass('form-row--sub-options')) {
-      return;
-    }
     if($(this).hasClass('form-row--file')) {
       return;
     }

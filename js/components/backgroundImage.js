@@ -21,15 +21,13 @@ function backgroundImage(element, options, hide) {
 	$( element ).each(function() {
     var imgSrc = $(this).find('img').first().attr('src');
 
-    if (imgSrc) {
-      if ( hide == 1 ) {
-        $(this).find('img').first('img').hide();
-      }
-      else {
-        $(this).find('img').parent('.image, .spotlight-image').hide();
-      }
-      $(this).css('background', 'url('+imgSrc+')' + options);
+    if ( hide == 1 ) {
+      $(this).find('img').first('img').hide();
+    }
+    else {
+      $(this).find('img').parent('.image, .spotlight-image').hide();
     }
 
+    $(this).css('background', 'url('+imgSrc+')' + options);
  });
 }
