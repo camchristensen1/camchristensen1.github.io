@@ -260,7 +260,7 @@ Homepage
 
 .homepage main .wrap .projects-container .collection ul li .collection-item__content .collection-item-label:hover { cursor: pointer; }
 
-.homepage main .wrap .projects-container .collection ul li .collection-item__content .collection-item-description { position: absolute; padding: 20px 40px; border: 2px solid #000; color: #000; background: #ffffff; max-width: 400px; -webkit-transform: translateY(105%); transform: translateY(105%); top: auto; bottom: 50%; left: auto; right: 20px; }
+.homepage main .wrap .projects-container .collection ul li .collection-item__content .collection-item-description { position: absolute; padding: 20px; border: 2px solid #000; color: #000; background: #ffffff; max-width: 400px; -webkit-transform: translateY(105%); transform: translateY(105%); top: auto; bottom: 50%; left: auto; right: 20px; }
 
 .homepage main .wrap .projects-container .collection li:first-child { z-index: 99; }
 
