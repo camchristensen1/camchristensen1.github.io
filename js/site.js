@@ -24,19 +24,19 @@ $(document).ready(function() {
 // =============================================================================
 
 	$('.nav-container ul li:first-child').on("click", function(){
-	  $('body').toggleClass('one_is_visible').removeClass('two_is_visible').removeClass('three_is_visible').removeClass('four_is_visible');
+	  $('body').addClass('one_is_visible').removeClass('two_is_visible').removeClass('three_is_visible').removeClass('four_is_visible');
 	});
 
 	$('.nav-container ul li:nth-child(2)').on("click", function(){
-	  $('body').toggleClass('two_is_visible').removeClass('one_is_visible').removeClass('three_is_visible').removeClass('four_is_visible');
+	  $('body').addClass('two_is_visible').removeClass('one_is_visible').removeClass('three_is_visible').removeClass('four_is_visible');
 	});
 
 	$('.nav-container ul li:nth-child(3)').on("click", function(){
-	  $('body').toggleClass('three_is_visible').removeClass('one_is_visible').removeClass('two_is_visible').removeClass('four_is_visible');
+	  $('body').addClass('three_is_visible').removeClass('one_is_visible').removeClass('two_is_visible').removeClass('four_is_visible');
 	});
 
 	$('.nav-container ul li:nth-child(4)').on("click", function(){
-	  $('body').toggleClass('four_is_visible').removeClass('one_is_visible').removeClass('two_is_visible').removeClass('three_is_visible');
+	  $('body').addClass('four_is_visible').removeClass('one_is_visible').removeClass('two_is_visible').removeClass('three_is_visible');
 	});
 
 // =============================================================================
