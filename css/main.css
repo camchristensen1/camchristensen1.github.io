@@ -1,6 +1,105 @@
-@charset "UTF-8";
-/* CSS Document */
+/* =============================================================================
+	Main Stylesheet
+	============================================================================= */
 
-h1 {
-	font-size:10px;
-}
+	/* General */
+
+	body {
+		background: #fff;
+	}
+
+	/* Header */
+	
+	header {
+		border: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		background: rgba(255, 255, 255, 0.25);
+		min-width: auto;
+		box-shadow: 0 0 0;
+	}
+	header .header-container {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+		padding: 0 50px;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	header nav ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+	header nav ul li {
+		display: inline-block;
+	}
+	header nav ul li a, header nav ul li a:link, header nav ul li a:visited {
+		padding: 20px;
+		color: #fff;
+	}
+	header nav ul li:hover a, header nav ul li:hover a:link, header nav ul li:hover a:visited {
+		color: #f59f9f;
+	}
+
+	/* Slider */
+
+	.fireSlider_section {
+		min-width: auto;
+	}
+
+	.fireSlider ul {
+		height: 100vh;
+	}
+
+	.fireSlider .pager {
+		text-align: left;
+		padding-left: 70px;
+		width: 100%;
+		position: absolute;
+		bottom: 0px;
+		left: 0;
+		right: 0;
+		background: #fff;
+		height: 100px;
+		margin: 0;
+		padding-top: 25px;
+	}
+
+	.fireSlider .pager span {
+		background: #000;
+		height: 15px;
+		width: 15px;
+	}
+
+	.fireSlider_nav {
+		display: none;
+	}
+
+	.fireSlider li .fdpc_spotlight_text .fdpc_spotlight_text_content {
+		max-width: 730px;
+		width: 100%;
+		top: -15px;
+	}
+
+	.fireSlider li.fire-slider-active {
+		overflow: hidden;
+	}
+
+	/* Footer */
+	footer {
+		background: transparent;
+		padding: 0;
+	}
