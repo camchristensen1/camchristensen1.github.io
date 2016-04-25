@@ -142,7 +142,7 @@
 	.primary-container {
 		width: 90%;
 		margin: 0 auto;
-		padding: 150px 50px 0 50px;
+		padding: 150px 0px 0 0px;
 		display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -178,7 +178,6 @@
 	@media screen and (max-width: 800px) {
 		.primary-container {
 			display: block;
-			padding: 150px 0px 0 0px;
 		}
 		.primary-container .col1 {
 		width: 100%;
