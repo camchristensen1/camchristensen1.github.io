@@ -27,8 +27,8 @@
 	}
 	header .header-container {
 		width: 90%;
-    margin: 0 auto;
-    background:#fff;
+		margin: 0 auto;
+		background: rgba(255, 255, 255, 0.9);
 		display: -webkit-box;
 		display: -webkit-flex;
 		display: -ms-flexbox;
@@ -61,6 +61,7 @@
 	}
 	header nav ul li:hover a, header nav ul li:hover a:link, header nav ul li:hover a:visited {
 		color: #a52c28;
+		cursor: pointer;
 	}
 	@media screen and (max-width: 800px) {
 		header .header-container {
@@ -93,7 +94,7 @@
 		bottom: 0px;
 		left: 0;
 		right: 0;
-		background: #fff;
+		background: rgba(255, 255, 255, 0.9);
 		height: 50px;
 		margin: 0 auto;
 		padding-top: 10px;
